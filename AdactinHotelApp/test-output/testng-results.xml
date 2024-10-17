@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-17T11:42:43Z" name="Default suite" finished-at="2024-10-17T11:42:57Z" duration-ms="13960">
+    <groups>
+    </groups>
+    <test started-at="2024-10-17T11:42:43Z" name="Default test" finished-at="2024-10-17T11:42:57Z" duration-ms="13960">
+      <class name="com.adactinhotelapp.TestRunner.AdactinHotelRun">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.adactinhotelapp.TestRunner.AdactinHotelRun@7164ca4c]" started-at="2024-10-17T11:42:44Z" name="launchBrowser" finished-at="2024-10-17T11:42:54Z" duration-ms="10076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="printTitle()[pri:0, instance:com.adactinhotelapp.TestRunner.AdactinHotelRun@7164ca4c]" started-at="2024-10-17T11:42:54Z" name="printTitle" description="This Test is used to get WebPage Title" finished-at="2024-10-17T11:42:54Z" duration-ms="28" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Adactin - Hotel Reservation System] but found [Adactin.com - Hotel Reservation System]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Adactin - Hotel Reservation System] but found [Adactin.com - Hotel Reservation System]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.adactinhotelapp.TestRunner.AdactinHotelRun.printTitle(AdactinHotelRun.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTitle -->
+        <test-method signature="printCurrentUrl()[pri:1, instance:com.adactinhotelapp.TestRunner.AdactinHotelRun@7164ca4c]" started-at="2024-10-17T11:42:54Z" name="printCurrentUrl" description="This Test is used to get WebPage Current URL" finished-at="2024-10-17T11:42:54Z" duration-ms="18" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Adactin - Hotel Reservation System] but found [Adactin.com - Hotel Reservation System],
+expected [http://adactinhotelapp.com/] but found [https://adactinhotelapp.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Adactin - Hotel Reservation System] but found [Adactin.com - Hotel Reservation System],
+expected [http://adactinhotelapp.com/] but found [https://adactinhotelapp.com/]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.adactinhotelapp.TestRunner.AdactinHotelRun.printCurrentUrl(AdactinHotelRun.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printCurrentUrl -->
+        <test-method signature="verifyLogin()[pri:2, instance:com.adactinhotelapp.TestRunner.AdactinHotelRun@7164ca4c]" started-at="2024-10-17T11:42:55Z" name="verifyLogin" description="This Test is used to login with account" finished-at="2024-10-17T11:42:57Z" duration-ms="2371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+      </class> <!-- com.adactinhotelapp.TestRunner.AdactinHotelRun -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
